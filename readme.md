@@ -1,17 +1,18 @@
-# The Name of My App
+# Hockey Team Search
 
-a description of my project
+A website that allows you to search through team rosters and stats.
 
 ### Technologies Used
 
-- tech
-- tech 2
-- tech 3
-- tech 4
+- Html
+- Css
+- Javascript/Jquery
+- Ajax
+
 
 ### Wireframes
 
-![SOme text](https://i.ytimg.com/vi/mRf3-JkwqfU/mqdefault.jpg)
+![Basic layout](https://i.imgur.com/ZjKHequ.jpg)
 
 ### Daily Plan
 
@@ -19,7 +20,11 @@ a description of my project
 |-----|------|
 | 1 | Choose API |
 | 2 | Render data to screen |
-| 3 | Create form |
+| 3 | Create base layout | |
+| 4 | Set up API Render Information|
+| 5 | Style Website|
+| 6 | Time for bonus work? |
+| 7 | Present Project| 
 
 ### Link to Project
 [My Project Live Page](https://j-gulledge19.github.io/ProjectOne/)
