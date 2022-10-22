@@ -38,7 +38,7 @@ h1{
     overflow-y: scroll;
     max-width: 200px;
     list-style-type: none;
-    
+    cursor: pointer;
 }
 
 main{
@@ -58,5 +58,15 @@ main{
 
 @media only screen 
 and (min-width : 1224px) {
-
+    main{
+        padding-left: 400px;
+        text-align: left;
+    }
+    h1{
+        padding-right: 100px;
+        margin-top: 10px;
+    }
+}
+::-webkit-scrollbar {
+    display: none;
 }
