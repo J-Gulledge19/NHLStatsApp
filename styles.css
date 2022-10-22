@@ -1,3 +1,7 @@
+img{
+    opacity: .5;
+}
+
 body{
     background-image: url('https://murals-weblinc.netdna-ssl.com/product_images/hockey-player-statistics-42735329/5ecd4492585ab7011b49a71e/product_large_image.jpg?c=1590510737');
     background-position: center center;
@@ -9,9 +13,9 @@ body{
     height: 100vh;
    display: grid;
    grid-template-columns: 1fr 2fr 1fr;
-    grid-template-rows: 50px 1fr 50px;
-    
+    grid-template-rows: 50px 1fr 50px;  
 }
+
 
 h1{
     text-align: center;
@@ -23,14 +27,26 @@ h1{
 .team-list{
     grid-column: 1;
     grid-row: 2;
-    text-align: center;
+    padding-left: 5px;
+    text-align: left;
     align-items: flex-start;
     justify-items: flex-start;
     font-size: medium;
     background-color: rgb(95, 158, 160, 0.8);
-    overflow-y: scroll;
-    margin-top: 50px;
+    margin-top: 75px;
     text-decoration: none;
+    overflow-y: scroll;
+    max-width: 200px;
+    list-style-type: none;
+    
+}
+
+main{
+    text-align: center;
+    margin-top: 75px;
+    overflow-y: scroll;
+    color: ivory;
+    max-width: 400px;
 }
 
 @media only screen 
