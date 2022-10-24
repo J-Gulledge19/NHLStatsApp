@@ -31,22 +31,24 @@ h1{
     text-align: left;
     align-items: flex-start;
     justify-items: flex-start;
-    font-size: medium;
+    font-size: 1rem;
     background-color: rgb(95, 158, 160, 0.8);
     margin-top: 75px;
     text-decoration: none;
     overflow-y: scroll;
-    max-width: 200px;
+    width: 10em;
     list-style-type: none;
     cursor: pointer;
 }
 
 main{
+    background-color: black;
+    opacity: .5;
     text-align: center;
     margin-top: 75px;
     overflow-y: scroll;
     color: ivory;
-    max-width: 400px;
+    font-size: 1rem;
 }
 
 @media only screen 
@@ -60,7 +62,8 @@ main{
 and (min-width : 1224px) {
     main{
         padding-left: 400px;
-        text-align: left;
+        text-align: left
+
     }
     h1{
         padding-right: 100px;

@@ -43,13 +43,13 @@ $.ajax(url).then((data) => {
 
     const teams = data.teams.map(team => {
         return `<li class=\'${team.name}-stats\' data-link=${baseURL}${key}${team.id}${statsModifier}>Team: ${team.name}</li>`
-    }).join('');
+    });
 
     const $ul = $('.team-list');
 
     $ul.html(`
-    ${teams}
-    `)
+    ${teams.join('')}
+    `);
     
 })
 
