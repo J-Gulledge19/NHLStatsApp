@@ -72,7 +72,7 @@ function renderStats(link){
             teamStats.push(`<div>${key}: ${value}</div>`)
         }
     }
-      $('main').html(`${teamStats}`);
+      $('main').html(`${teamStats.join('')}`);
       
     })
 }

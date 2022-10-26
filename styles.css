@@ -39,6 +39,13 @@ h1{
     width: 10em;
     list-style-type: none;
     cursor: pointer;
+    margin: rem;
+}
+
+li{
+    margin: .5rem;
+    font-weight: bold;
+    
 }
 
 main{
@@ -51,23 +58,60 @@ main{
     font-size: 1rem;
 }
 
+div{
+    display: flex;
+  text-align: center;
+  color: ivory;
+  font-weight: bold;
+    justify-content: space-between;
+    justify-content: space-around;
+  margin: 1rem;
+  text-align: center;
+}
+
 @media only screen 
  and (min-device-width : 320px)
  and (max-device-width : 480px){
-    
+
+    li{
+        width: 7rem;
+    }
+
+    .team-list{
+        width: 8rem;
+    }
    
 }
 
 @media only screen 
 and (min-width : 1224px) {
     main{
-        padding-left: 400px;
+        padding-right: 5rem;
         text-align: left
 
     }
     h1{
         padding-right: 100px;
         margin-top: 10px;
+    }
+
+    div{
+        display: flex;
+      text-align: center;
+      color: #fbfbfb;
+      font-weight: bold;
+        justify-content: space-between;
+        justify-content: space-around;
+      margin: 1rem;
+      text-align: center;
+    }
+
+    li{
+        width: 15rem;
+    }
+
+    .team-list{
+        width: 15rem;
     }
 }
 ::-webkit-scrollbar {
