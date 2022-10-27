@@ -125,7 +125,7 @@ function renderLogos(url){
                 $.ajax(teamLogos[teamId]).then((data) =>{
                     console.log(data)
                 })
-                displayLogo =`<a href="${teamLogos[teamId]}" alt="${data.teams[0].name} Logo">`;
+                displayLogo =`<img src="${teamLogos[teamId]}" alt="${data.teams[0].name} Logo">`;
             }
         $('.team-logo').html(`${displayLogo}`)
     })
