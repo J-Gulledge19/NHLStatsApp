@@ -77,7 +77,7 @@ $.ajax(url).then((data) => {
     console.log(data);
 
     const teams = data.teams.map(team => {
-        return `<li class=\'${team.name}-stats\' data-link=${baseURL}${key}${team.id}${statsModifier}>Team: ${team.name}</li>`
+        return `<li class=\'${team.name}-stats\' data-link=${baseURL}${key}${team.id}${statsModifier}>  ${team.name}</li>`
     });
 
     const $ul = $('.team-list');

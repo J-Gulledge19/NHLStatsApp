@@ -22,6 +22,26 @@ h1{
     font-family: 'Shalimar', cursive;
     font-size: 50px;
     grid-column: 1/4;
+    
+
+}
+
+h2{
+    text-align: center;
+    justify-content: flex-start;
+    font-family: 'Shalimar', cursive;
+    font-size: 50px;
+    grid-column: 1;
+    grid-row: 2;
+    color: ivory;
+    margin-top: .5em;
+    padding-right: 1em;
+    background-color: black;
+    opacity: .5;
+    margin-bottom: 16em;
+    margin-top: .3em;
+    margin-right: .7em;
+    
 }
 
 .team-list{
@@ -91,7 +111,31 @@ img{
 
     .team-list{
         width: 8rem;
+        padding-top: .8em;
     }
+
+    main{
+        width: 8em;
+        padding-right: 1em;
+    }
+
+    div{
+        width: 5em;
+        text-align: center;
+        
+    }
+
+    h1{
+        margin-top: .5em;
+    }
+
+    h2{
+        margin-top: .5em;
+        max-height: 1em;
+        margin-right: 0%;
+        
+    }
+
     img{
     grid-column: 1/4;
     align-self: center;
@@ -115,6 +159,17 @@ and (min-width : 1224px) {
         margin-top: 10px;
     }
 
+    h2{
+        padding-right: 5em;
+        width: 15rem;
+        text-align: center;
+        padding-right: .1em;
+        
+        
+      
+
+    }
+
     div{
         display: flex;
       text-align: center;
@@ -124,10 +179,13 @@ and (min-width : 1224px) {
         justify-content: space-around;
       margin: 1rem;
       text-align: center;
+      
     }
 
     li{
         width: 15rem;
+        text-align: center;
+        padding-right: 10em;
     }
 
     .team-list{
