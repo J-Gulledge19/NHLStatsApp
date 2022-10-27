@@ -83,7 +83,7 @@ $.ajax(url).then((data) => {
     const $ul = $('.team-list');
 
     $ul.html(`
-    ${teams.join('')}
+    ${teams.sort().join('')}
     `);
     
 })
