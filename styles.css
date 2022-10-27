@@ -130,10 +130,11 @@ img{
     }
 
     h2{
-        margin-top: .5em;
+        margin-top: 1.25em;
         max-height: 1em;
         margin-right: 0%;
         padding-right: 0em;
+        font-size: xx-large;
         
     }
 
@@ -141,9 +142,11 @@ img{
     grid-column: 1/4;
     align-self: center;
     justify-items: flex-start;
-    max-width: 5em;
-    max-height: 5em;
-    padding-top: 3em;
+    max-width: 6em;
+    max-height: 8em;
+    padding-top: 1em;
+    padding-bottom: 10em;
+    
     }
    
 }
