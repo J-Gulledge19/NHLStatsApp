@@ -133,6 +133,14 @@ and (min-width : 1224px) {
     .team-list{
         width: 15rem;
     }
+
+    img{
+        align-self: center;
+        justify-items: flex-start;
+        max-width: 20em;
+        max-height: 20em;
+        padding-top: 10em;
+        }
 }
 ::-webkit-scrollbar {
     display: none;
