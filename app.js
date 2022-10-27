@@ -37,6 +37,41 @@ const readableKeys = {
     shootingPctg: 'Shooting Percentage',
     savePctg: 'Save Percentage'
 }
+
+const teamLogos = {
+    1: './Images/Devils_Logo.jpg',
+    2: './New_York_Islanders.jpg',
+    3: 'https://i.imgur.com/mPA11R4.jpg',
+    4: 'https://i.imgur.com/KIxMGPU.jpg',
+    5: 'https://i.imgur.com/C7R7Vt0.png',
+    6: 'https://i.imgur.com/3FQGsa2.jpg',
+    7: 'https://i.imgur.com/8jLmFzT.png',
+    8: 'https://i.imgur.com/lMJdaWB.png',
+    9: 'https://i.imgur.com/gNmTxc6.png',
+    10: 'https://i.imgur.com/89b7fLs.png',
+    12: 'https://i.imgur.com/SuB98Hr.png',
+    13: 'https://i.imgur.com/3pk7lf2.png',
+    14: 'https://i.imgur.com/47Z9RRx.jpg',
+    15: 'https://i.imgur.com/b4SC6qI.jpg',
+    16: 'https://i.imgur.com/9xqIg3j.jpg',
+    17: 'https://i.imgur.com/jqE4tQ1.png',
+    18: 'https://i.imgur.com/ZyAP7n9.png',
+    19: 'https://i.imgur.com/A3oGea0.png',
+    20: 'https://i.imgur.com/cshTf9o.png',
+    21: 'https://i.imgur.com/VyUCtNl.png',
+    22: 'https://i.imgur.com/DMod5Et.png',
+    23: 'https://i.imgur.com/lBdEccH.png',
+    24: 'https://i.imgur.com/qxHtIeO.jpg',
+    25: 'https://i.imgur.com/jPQV2nm.png',
+    26: 'https://i.imgur.com/XjXzgbS.png',
+    28: 'https://i.imgur.com/mg09dS7.jpg',
+    29: 'https://i.imgur.com/RzZ0iqk.png',
+    30: 'https://i.imgur.com/7Phu0SX.png',
+    52: 'https://i.imgur.com/VyKc2pG.png',
+    53: 'https://i.imgur.com/QLgCxzt.png',
+    54: 'https://i.imgur.com/uBDi0r0.png',
+    55: 'https://i.imgur.com/jdW4o29.png'
+}
     
 $.ajax(url).then((data) => {
     console.log(data);
@@ -56,6 +91,7 @@ $.ajax(url).then((data) => {
 $(document).ready(function(){
     $("ul").on("click", 'li', function(event) {
         renderStats(event.target.dataset.link)
+        renderLogos(event.target.dataset.link)
     })
 })
 
@@ -77,3 +113,20 @@ function renderStats(link){
     })
 }
 
+
+function renderLogos(url){
+    $.ajax(url).then((data) =>{
+        console.log(data)
+        const teamId = data.teams[0].id
+        console.log(data.teams[0].id)
+        let displayLogo; 
+        console.log(Object.entries(teamId))
+            if (teamLogos[teamId]){
+                $.ajax(teamLogos[teamId]).then((data) =>{
+                    console.log(data)
+                })
+                displayLogo =`<a href="${teamLogos[teamId]}" alt="${data.teams[0].name} Logo">`;
+            }
+        $('.team-logo').html(`${displayLogo}`)
+    })
+}
