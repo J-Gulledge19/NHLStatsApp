@@ -3,7 +3,7 @@ img{
 }
 
 body{
-    background-image: url('https://murals-weblinc.netdna-ssl.com/product_images/hockey-player-statistics-42735329/5ecd4492585ab7011b49a71e/product_large_image.jpg?c=1590510737');
+    background-image: url('./Images/hockey-player-statistics-mural-wallpaper.jpg');
     background-position: center center;
     background-attachment: fixed;
     background-size: cover;
@@ -39,7 +39,7 @@ h1{
     width: 10em;
     list-style-type: none;
     cursor: pointer;
-    margin: rem;
+    margin-bottom: 0%;
 }
 
 li{
@@ -69,6 +69,18 @@ div{
   text-align: center;
 }
 
+img{
+    display: flex;
+    grid-column: 3;
+    grid-row: 2;
+    align-self: center;
+    justify-items: flex-start;
+    max-width: 75em;
+    max-height: 10em;
+    padding-top: 3em;
+    max-block-size: 6em;
+}
+
 @media only screen 
  and (min-device-width : 320px)
  and (max-device-width : 480px){
@@ -79,6 +91,14 @@ div{
 
     .team-list{
         width: 8rem;
+    }
+    img{
+    grid-column: 1/4;
+    align-self: center;
+    justify-items: flex-start;
+    max-width: 5em;
+    max-height: 5em;
+    padding-top: 3em;
     }
    
 }

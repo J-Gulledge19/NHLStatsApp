@@ -40,37 +40,37 @@ const readableKeys = {
 
 const teamLogos = {
     1: './Images/Devils_Logo.jpg',
-    2: './New_York_Islanders.jpg',
-    3: 'https://i.imgur.com/mPA11R4.jpg',
-    4: 'https://i.imgur.com/KIxMGPU.jpg',
-    5: 'https://i.imgur.com/C7R7Vt0.png',
-    6: 'https://i.imgur.com/3FQGsa2.jpg',
-    7: 'https://i.imgur.com/8jLmFzT.png',
-    8: 'https://i.imgur.com/lMJdaWB.png',
-    9: 'https://i.imgur.com/gNmTxc6.png',
-    10: 'https://i.imgur.com/89b7fLs.png',
-    12: 'https://i.imgur.com/SuB98Hr.png',
-    13: 'https://i.imgur.com/3pk7lf2.png',
-    14: 'https://i.imgur.com/47Z9RRx.jpg',
-    15: 'https://i.imgur.com/b4SC6qI.jpg',
-    16: 'https://i.imgur.com/9xqIg3j.jpg',
-    17: 'https://i.imgur.com/jqE4tQ1.png',
-    18: 'https://i.imgur.com/ZyAP7n9.png',
-    19: 'https://i.imgur.com/A3oGea0.png',
-    20: 'https://i.imgur.com/cshTf9o.png',
-    21: 'https://i.imgur.com/VyUCtNl.png',
-    22: 'https://i.imgur.com/DMod5Et.png',
-    23: 'https://i.imgur.com/lBdEccH.png',
-    24: 'https://i.imgur.com/qxHtIeO.jpg',
-    25: 'https://i.imgur.com/jPQV2nm.png',
-    26: 'https://i.imgur.com/XjXzgbS.png',
-    28: 'https://i.imgur.com/mg09dS7.jpg',
-    29: 'https://i.imgur.com/RzZ0iqk.png',
-    30: 'https://i.imgur.com/7Phu0SX.png',
-    52: 'https://i.imgur.com/VyKc2pG.png',
-    53: 'https://i.imgur.com/QLgCxzt.png',
-    54: 'https://i.imgur.com/uBDi0r0.png',
-    55: 'https://i.imgur.com/jdW4o29.png'
+    2: './Images/New_York_Islanders.jpg',
+    3: './Images/New_York_Rangers.jpg',
+    4: './Images/Philadelphia_Flyers.jpg',
+    5: './Images/Pittsburgh_Penguins.png',
+    6: './Images/Boston_Bruins.jpg',
+    7: './Images/Buffalo_Sabres.png',
+    8: './Images/Montréal_Canadiens.png',
+    9: './Images/Ottawa_Senators.png',
+    10: './Images/Toronto_Maple_Leafs.png',
+    12: './Images/Carolina_Hurricanes.png',
+    13: './Images/Florida_Panthers.png',
+    14: './Images/Tampa_Bay_Lightning.jpg',
+    15: './Images/Washington_Capitals.jpg',
+    16: './Images/Chicago_Blackhawks.jpg',
+    17: './Images/Detroit_Red_Wings.png',
+    18: './Images/Nashville_Predators.png',
+    19: './Images/St._Louis_Blues.png',
+    20: './Images/Calgary_Flames.png',
+    21: './Images/Colorado_Avalanche.png',
+    22: './Images/Edmonton_Oilers.png',
+    23: './Images/Vancouver_Canucks.png',
+    24: './Images/Anaheim_Ducks.jpg',
+    25: './Images/Dallas_Stars.png',
+    26: './Images/Los_Angeles_Kings.png',
+    28: './Images/San_Jose_Sharks.jpg',
+    29: './Images/Columbus_Blue_Jackets.png',
+    30: './Images/Minnesota_Wild.png',
+    52: './Images/Winnipeg_Jets.png',
+    53: './Images/Arizona_Coyotes.png',
+    54: './Images/Vegas_Golden_Knights.png',
+    55: './Images/Seattle_Kraken.png'
 }
     
 $.ajax(url).then((data) => {
@@ -117,14 +117,12 @@ function renderStats(link){
 function renderLogos(url){
     $.ajax(url).then((data) =>{
         console.log(data)
+
         const teamId = data.teams[0].id
         console.log(data.teams[0].id)
+
         let displayLogo; 
-        console.log(Object.entries(teamId))
             if (teamLogos[teamId]){
-                $.ajax(teamLogos[teamId]).then((data) =>{
-                    console.log(data)
-                })
                 displayLogo =`<img src="${teamLogos[teamId]}" alt="${data.teams[0].name} Logo">`;
             }
         $('.team-logo').html(`${displayLogo}`)
