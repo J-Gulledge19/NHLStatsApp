@@ -120,7 +120,7 @@ img{
     }
 
     div{
-        width: 5em;
+        width: 6em;
         text-align: center;
         
     }
@@ -133,6 +133,7 @@ img{
         margin-top: .5em;
         max-height: 1em;
         margin-right: 0%;
+        padding-right: 0em;
         
     }
 
