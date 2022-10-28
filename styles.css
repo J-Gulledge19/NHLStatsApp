@@ -41,6 +41,7 @@ h2{
     margin-bottom: 16em;
     margin-top: .3em;
     margin-right: .7em;
+    max-height: 60px
     
 }
 
@@ -56,10 +57,10 @@ h2{
     margin-top: 75px;
     text-decoration: none;
     overflow-y: scroll;
-    width: 10em;
     list-style-type: none;
     cursor: pointer;
     margin-bottom: 0%;
+    margin-right: 2.2rem;
 }
 
 li{
@@ -112,6 +113,7 @@ img{
     .team-list{
         width: 8rem;
         padding-top: .8em;
+        margin-right: 0rem;
     }
 
     main{
@@ -135,6 +137,7 @@ img{
         margin-right: 0%;
         padding-right: 0em;
         font-size: xx-large;
+        max-width: 132px;
         
     }
 
@@ -164,13 +167,10 @@ and (min-width : 1224px) {
     }
 
     h2{
-        padding-right: 5em;
+        padding-right: 5rem;
         width: 15rem;
         text-align: center;
-        padding-right: .1em;
-        
-        
-      
+        padding-right: .1rem;   
 
     }
 
