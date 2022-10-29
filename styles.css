@@ -11,8 +11,8 @@ body{
     margin: 0;
     padding: 0;
     height: 100vh;
-   display: grid;
-   grid-template-columns: 1fr 2fr 1fr;
+    display: grid;
+    grid-template-columns: 1fr 2fr 1fr;
     grid-template-rows: 50px 1fr 50px;  
 }
 
@@ -22,8 +22,6 @@ h1{
     font-family: 'Shalimar', cursive;
     font-size: 50px;
     grid-column: 1/4;
-    
-
 }
 
 h2{
@@ -41,8 +39,7 @@ h2{
     margin-bottom: 16em;
     margin-top: .3em;
     margin-right: .7em;
-    max-height: 60px
-    
+    max-height: 60px  
 }
 
 .team-list{
@@ -65,8 +62,7 @@ h2{
 
 li{
     margin: .5rem;
-    font-weight: bold;
-    
+    font-weight: bold;   
 }
 
 main{
@@ -81,13 +77,13 @@ main{
 
 div{
     display: flex;
-  text-align: center;
-  color: ivory;
-  font-weight: bold;
+    text-align: center;
+    color: ivory;
+    font-weight: bold;
     justify-content: space-between;
     justify-content: space-around;
-  margin: 1rem;
-  text-align: center;
+    margin: 1rem;
+    text-align: center;
 }
 
 img{
@@ -123,8 +119,7 @@ img{
 
     div{
         width: 6em;
-        text-align: center;
-        
+        text-align: center;  
     }
 
     h1{
@@ -142,14 +137,13 @@ img{
     }
 
     img{
-    grid-column: 1/4;
-    align-self: center;
-    justify-items: flex-start;
-    max-width: 6em;
-    max-height: 8em;
-    padding-top: 1em;
-    padding-bottom: 3em;
-    
+        grid-column: 1/4;
+        align-self: center;
+        justify-items: flex-start;
+        max-width: 7em;
+        max-height: 8em; 
+        padding-top: 1em;
+        padding-bottom: 3em;
     }
    
 }
@@ -159,8 +153,8 @@ and (min-width : 1224px) {
     main{
         padding-right: 5rem;
         text-align: left
-
     }
+
     h1{
         padding-right: 100px;
         margin-top: 10px;
@@ -176,14 +170,13 @@ and (min-width : 1224px) {
 
     div{
         display: flex;
-      text-align: center;
-      color: #fbfbfb;
-      font-weight: bold;
+        text-align: center;
+        color: #fbfbfb;
+        font-weight: bold;
         justify-content: space-between;
         justify-content: space-around;
-      margin: 1rem;
-      text-align: center;
-      
+        margin: 1rem;
+        text-align: center;  
     }
 
     li{
@@ -202,8 +195,9 @@ and (min-width : 1224px) {
         max-width: 20em;
         max-height: 20em;
         padding-top: 10em;
-        }
+    }
 }
+
 ::-webkit-scrollbar {
     display: none;
 }

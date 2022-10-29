@@ -74,7 +74,6 @@ const teamLogos = {
 }
     
 $.ajax(url).then((data) => {
-    console.log(data);
 
     const teams = data.teams.map(team => {
         return `<li class=\'${team.name}-stats\' data-link=${baseURL}${key}${team.id}${statsModifier}>  ${team.name}</li>`
@@ -92,20 +91,20 @@ $(document).ready(function(){
     $("ul").on("click", 'li', function(event) {
         renderStats(event.target.dataset.link)
         renderLogos(event.target.dataset.link)
-    })
+    });
 })
 
 function renderStats(link){
     $.ajax(link).then((statsData) =>{
-        console.log(statsData)
+
         const statArea = statsData.teams[0].teamStats[0].splits[0].stat
     const teamStats = []
-    console.log(Object.entries(statArea))
+
     for(const [key, value] of Object.entries(statArea)){
         if (readableKeys[key]){
-            teamStats.push(`<div>${readableKeys[key]}: ${value}</div>`)
+            teamStats.push(`<div>${readableKeys[key]}: ${value}</div>`);
         }else{
-            teamStats.push(`<div>${key}: ${value}</div>`)
+            teamStats.push(`<div>${key}: ${value}</div>`);
         }
     }
       $('main').html(`${teamStats.join('')}`);
@@ -116,15 +115,13 @@ function renderStats(link){
 
 function renderLogos(url){
     $.ajax(url).then((data) =>{
-        console.log(data)
 
-        const teamId = data.teams[0].id
-        console.log(data.teams[0].id)
+        const teamId = data.teams[0].id;
 
         let displayLogo; 
             if (teamLogos[teamId]){
                 displayLogo =`<img src="${teamLogos[teamId]}" alt="${data.teams[0].name} Logo">`;
             }
-        $('.team-logo').html(`${displayLogo}`)
+        $('.team-logo').html(`${displayLogo}`);
     })
 }
