@@ -155,7 +155,7 @@ img{
 }
 
 @media only screen 
-and (min-width : 844px) {
+and (min-width : 800px) {
     main{
         padding-right: 5rem;
         text-align: left
