@@ -72,8 +72,7 @@ const teamLogos = {
     54: './Images/Vegas_Golden_Knights.png',
     55: './Images/Seattle_Kraken.png'
 }
-  
-// Function to get team name list 
+    
 $.ajax(url).then((data) => {
 
     const teams = data.teams.map(team => {
@@ -88,7 +87,6 @@ $.ajax(url).then((data) => {
     
 })
 
-// Render stats and logos on click
 $(document).ready(function(){
     $("ul").on("click", 'li', function(event) {
         renderStats(event.target.dataset.link)
@@ -96,7 +94,6 @@ $(document).ready(function(){
     });
 })
 
-// Fuunction to pull stats and change keys to a more readable key
 function renderStats(link){
     $.ajax(link).then((statsData) =>{
 
@@ -115,7 +112,7 @@ function renderStats(link){
     })
 }
 
-// Function to render logos matching team id
+
 function renderLogos(url){
     $.ajax(url).then((data) =>{
 
